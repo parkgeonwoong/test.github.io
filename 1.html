@@ -7,67 +7,111 @@
     <title>WEB1_html</title>
     <!--웹페이지 이름-->
     <meta charset="uft-8">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            color: steelblue;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol {
+            padding-left: 33px;
+        }
+        #grid #article {
+            padding-left: 27px;
+        }
+    </style>
+
+
 </head>
 
 <body>
     <!-- 본문 -->
     <h1><a href="idex.html">WEB</a></h1>
 
-    <!-- 목차 순서-->
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
+    <div id="grid">
+        <!-- 목차 순서-->
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
 
-    <!-- 제목 -->
-    <h2>HTML</h2>
+        <div id="article">
+            <!-- 제목 -->
+            <h2>HTML</h2>
 
+            <!-- 단락 -->
+            <p><a href="https://www.w3.org/TR/html52/" target="_blank" title="HTML5"> this HTML tutorial,</a> you will
+                find more than 200 examples.</p>
+            <p style="margin-top:30px;">With our online "Try it Yourself" editor, you can edit and test each example
+                yourself!
+            </p>
+            <!-- 동영상 삽입 -->    
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </p>
+            <!-- 댓글 삽입 -->
+            <p>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://web1-kzea8pok1v.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+            </p>
 
-    <!-- 단락 -->
-    <p><a href="https://www.w3.org/TR/html52/" target="_blank" title="HTML5"> this HTML tutorial,</a> you will find more
-        than 200 examples.</p>
-    <p style="margin-top:45px;">With our online "Try it Yourself" editor, you can edit and test each example yourself!
-    </p>
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
-    
-    <p>
-        <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web1-kzea8pok1v.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
-    
-    
-    HTML5 is the latest evolution of the standard that defines HTML.
-    The term represents two different concepts.
-    It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of
-    technologies that allows the building of more diverse and powerful Web sites and applications.
-    This set is sometimes called HTML5 & friends and often shortened to just HTML5.
+            HTML5 is the latest evolution of the standard that defines HTML.
+            The term represents two different concepts.
+            It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of
+            technologies that allows the building of more diverse and powerful Web sites and applications.
+            This set is sometimes called HTML5 & friends and often shortened to just HTML5.
 
-    <!-- 이미지 -->
-    <p>
-    <h2>Coding</h2>
-    </p>
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
-        width="50%" />
+            <p><h2>Coding</h2></p>
+            <!-- 이미지 -->
+            <p>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                width="50%" />
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
