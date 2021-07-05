@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+  <title>Home - My first website</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is webSite" />
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @-webkit-keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0.6;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0.6;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+    div {
+      font-size: 50px;
+      animation: tracking-in-expand 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <strong>Animation</strong>
+  </div>
+</body>
+
+</html>
